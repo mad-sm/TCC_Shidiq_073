@@ -1,4 +1,4 @@
-const BASE_URL = "https://backend5-1031435520100.us-central1.run.app";
+const BASE_URL = "https://notes73-525072028648.us-central1.run.app";
 
 // Ambil elemen form
 const formulir = document.querySelector("form");
