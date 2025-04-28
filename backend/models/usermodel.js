@@ -7,6 +7,11 @@ const user = db.define(
         nama: Sequelize.STRING,
         judul: Sequelize.STRING,
         catatan: Sequelize.STRING,
+    },
+    {
+        freezeTableName: true,
+        createdAt: "tanggal_dibuat",
+        updatedAt: "tanggal_diubah",
     }
 );
 
