@@ -10,7 +10,10 @@
 <body>
     <h2>Notes</h2>
     <form id="form-notes">
-        <input type="hidden" id="note-id">
+        <input type="hidden" id="note-id"> <!-- Input hidden untuk menyimpan ID -->
+        <label>Nama:</label>
+        <input type="text" id="nama" required>
+        <br>
         <label>Judul:</label>
         <input type="text" id="judul" required>
         <br>
@@ -25,6 +28,7 @@
         <thead>
             <tr>
                 <th>No</th>
+                <th>Nama</th>
                 <th>Judul</th>
                 <th>Catatan</th>
                 <th>Aksi</th>

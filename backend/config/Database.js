@@ -1,8 +1,8 @@
 import { Sequelize } from "sequelize";
 
-const db = new Sequelize('cloud_db','root','jelajahilah21',{
-    host: '34.44.126.1',
-    dialect: 'mysql',
-}); 
+const db = new Sequelize("notes", "root", "bebas", {
+    host: "34.44.45.42",
+    dialect: "mysql",
+});
 
 export default db;

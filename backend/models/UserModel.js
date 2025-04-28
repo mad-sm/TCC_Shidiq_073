@@ -1,17 +1,15 @@
 import { Sequelize } from "sequelize";
-import  db from "../config/Database.js";
+import db from "../config/Database.js";
 
-const {DataTypes} = Sequelize;
+const user = db.define(
+    "users",
+    {
+        nama: Sequelize.STRING,
+        judul: Sequelize.STRING,
+        catatan: Sequelize.STRING,
+    }
+);
 
-const User = db.define('users',{
-    judul: DataTypes.STRING,
-    teks: DataTypes.STRING,
-},{
-    freezeTableName:true
-});
+db.sync().then(() => console.log("Database synced"));
 
-export default User;
-
-(async()=>{
-    await db.sync();
-})();
+export default user;

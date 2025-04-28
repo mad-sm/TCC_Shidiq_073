@@ -1,12 +1,12 @@
-GET http://localhost:5000/users
+GET http://localhost:5000/notes
 
 ###
-GET http://localhost:5000/users/1
-
+DELETE  http://localhost:5000/delete-user/1
 ###
-POST http://localhost:5000/users
+POST http://localhost:5000/tambahdata
 Content-Type: application/json
 {
-    "judul":"Teks pertama",
-    "teks": "apakah yang terjadi setelah ini"
+    "nama":"John Doe",
+    "judul":"Software Engineer",
+    "catatan":"This is a test note",
 }
